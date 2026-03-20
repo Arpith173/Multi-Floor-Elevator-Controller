@@ -163,23 +163,6 @@ stateDiagram-v2
 
 ### Simulation
 
-#### Using Icarus Verilog
-
-```bash
-# Compile all sources + testbench
-iverilog -o elevator_sim \
-    src/button_debouncer.v \
-    src/elevator_controller.v \
-    src/elevator_top.v \
-    tb/elevator_tb.v
-
-# Run simulation
-vvp elevator_sim
-
-# View waveforms
-gtkwave elevator_tb.vcd &
-```
-
 #### Using Xilinx Vivado
 
 1. Create a new RTL project targeting your FPGA.
